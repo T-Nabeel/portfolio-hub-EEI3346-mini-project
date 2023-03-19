@@ -1,8 +1,8 @@
-# portfolio-hub
+# Portfolio Hub
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a project related to course EEI3346 Web Application Development of OUSL. The goal of this project is to get familiarize with the VueJS framework.
 
-## Recommended IDE Setup
+## Recommended IDE Setup  
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
