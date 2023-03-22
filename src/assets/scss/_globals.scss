@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+// Style reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  // cursor: none;
+}
+
+// Text selection
+::selection {
+  color: $veyrDarkGray;
+  background: $white;
+}
+
+body {
+  background-color: $veyrDarkGray;
+}
+
+h1, h2, h3, p, a {
+  text-decoration: none;
+  color: $white;
+}
+
+.container {
+  max-width: 93vw;
+  margin: auto;
+}
+
+// Custom cursor
+// .cursor {
+//   z-index: 99;
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background: #fff;
+//   transition: 0.1s;
+//   transform: translate(-50%, -50%);
+//   pointer-events: none;
+// }
+
+// nav .nav-links .nav-links__link:hover ~ .cursor {
+//   transform: scale(9);
+// }
