@@ -1,0 +1,178 @@
+.work {
+  &__heading {
+    margin-top: 20vh;
+    font-size: 2rem;
+    text-align: center;
+
+    &__bg-gradient {
+      @include backgroundAnimation($top: -10vh, $left: 10vw, $size: 50rem);
+    }
+  }
+
+  &__template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Template one styles
+    &--one {
+      margin-top: 30vh;
+      display: flex;
+      flex-direction: row;
+
+      &__img {
+        width: 40vw;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__details {
+        width: 40vw;
+        margin: auto 0 auto 0;
+        padding-left: 5vw;
+
+        &--heading {
+          font-size: 1.8rem;
+          margin-bottom: 5vh;
+        }
+
+        &--technologies {
+          &__row {
+            display: flex;
+            flex-direction: row;
+
+            &:not(:last-child) {
+              margin-bottom: 2vh;
+            }
+
+            &__item {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              &:not(:last-child) {
+                margin-right: 3vw;
+              }
+
+              &--icon {
+                width: 2rem;
+                margin-right: 1vw;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              &--name {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+
+        &--btns {
+          margin-top: 10vh;
+          display: flex;
+          flex-direction: row;
+          height: 4rem;
+
+          &__btn {
+            width: 10rem;
+
+            &:not(:last-child) {
+              margin-right: 2vw;
+            }
+          }
+        }
+      }
+    }
+
+    // Template two styles
+    &--two {
+      margin-top: 30vh;
+      display: flex;
+      flex-direction: row;
+
+      &__bg-gradient {
+        @include backgroundAnimation($top: 10vh, $left: 20vw, $size: 40rem);
+      }
+
+
+      &__details {
+        width: 40vw;
+        margin: auto 0 auto 0;
+        padding-right: 5vw;
+
+        &--heading {
+          font-size: 1.8rem;
+          margin-bottom: 5vh;
+          text-align: right;
+        }
+
+        &--technologies {
+
+          &__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+
+            &:not(:last-child) {
+              margin-bottom: 2vh;
+            }
+
+            &__item {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              &:not(:last-child) {
+                margin-right: 3vw;
+              }
+
+              &--icon {
+                width: 2rem;
+                margin-right: 1vw;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              &--name {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+
+        &--btns {
+          margin-top: 10vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          height: 4rem;
+
+          &__btn {
+            width: 10rem;
+
+            &:not(:last-child) {
+              margin-right: 2vw;
+            }
+          }
+        }
+      }
+
+      &__img {
+        width: 40vw;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+
+  }
+}

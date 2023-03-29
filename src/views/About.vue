@@ -51,6 +51,3 @@
 
   </main>
 </template>
-
-<style>
-</style>

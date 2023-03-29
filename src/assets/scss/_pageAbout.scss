@@ -67,10 +67,8 @@
 
   &__items {
     display: grid;
-    // grid-template-columns: auto auto auto;
     grid-template-columns: 25rem 25rem 25rem;
     justify-content: space-between;
-    // column-gap: auto;
 
     &__item {
       border-top: 1px solid $white;
