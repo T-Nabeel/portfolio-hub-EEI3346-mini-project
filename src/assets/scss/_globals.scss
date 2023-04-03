@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+// Style reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  // cursor: none;
+}
+
+// Text selection
+::selection {
+  color: $veyrDarkGray;
+  background: $white;
+}
+
+// General
+body {
+  background-color: $veyrDarkGray;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.container {
+  max-width: 93vw;
+  margin: auto;
+}
+
+// Work Page button
+.work-btn {
+  color: $white;
+  font-size: 1.5rem;
+  border: 1px solid $white;
+  background: transparent;
+  width: 10rem;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 10rem;
+  }
+
+  &:hover {
+    color: $veyrDarkGray;
+    background: $white;
+    width: 9.5rem;
+    padding: 0.7rem 0;
+  }
+}
+
+// Custom cursor
+// .cursor {
+//   z-index: 99;
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background: #fff;
+//   transition: 0.1s;
+//   transform: translate(-50%, -50%);
+//   pointer-events: none;
+// }
+
+// nav .nav-links .nav-links__link:hover ~ .cursor {
+//   transform: scale(9);
+// }

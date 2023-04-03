@@ -1,0 +1,63 @@
+// Background animated gradient shape
+@mixin backgroundAnimation($top, $left, $size) {
+  top: $top;
+  left: $left;
+  z-index: -1;
+  position: absolute;
+  $area: $size;
+  $speed: 5s;
+  $easing: cubic-bezier(0.8, 0.8, 0.8, 0.8);
+
+  width: $area;
+  height: $area;
+  filter: blur(calc($area / 5));
+  background-image: linear-gradient(hsla(184, 83%, 14%, 0.7), hsla(204, 83%, 14%, 0.8));
+  animation: rotate $speed $easing infinite;
+  // border-radius: 50% 20% 50% 30%;
+  border-radius: 50%;
+}
+
+// Round button
+@mixin roundButton($height, $width, $fontSize) {
+  button {
+    color: $white;
+    font-size: $fontSize;
+    border: none;
+    height: $height;
+    width: $width;
+    background-color: transparent;
+    cursor: pointer;
+
+    span {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: $height;
+      width: $width;
+    }
+
+    span:before {
+      content: '';
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      border-radius: 100%;
+      border: 2px solid $white;
+      box-sizing: border-box;
+      transition: all 0.5s cubic-bezier(0.25, 1, 0.33, 1);
+    }
+
+    &:hover {
+      color: $veyrDarkGray;
+    }
+  }
+
+  &:hover span:before {
+    background-color: $white;
+    transform: scale(0.95);
+  }
+}

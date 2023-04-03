@@ -1,0 +1,87 @@
+// Intro section
+.intro-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 6vh 0;
+
+  &__text {
+    text-align: right;
+
+    &__heading-one {
+      font-size: 6rem;
+      font-weight: 500;
+
+      span {
+        font-size: 7rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: transparent;
+        -webkit-text-stroke: 3px $white;
+      }
+    }
+
+    &__heading-two {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+
+    img {
+      width: 40rem;
+    }
+  }
+}
+
+// Occupation section
+.occupation {
+  margin: 20vh 0;
+  padding: 30vh 12rem;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+
+  &__bg-gradient {
+    @include backgroundAnimation($top: -60vh, $left: 10vw, $size: 50rem);
+  }
+
+  &__para {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+// Scope of Work section
+.scope-of-work {
+  margin: 30vh 0;
+
+  &__bg-gradient {
+    @include backgroundAnimation($top: -20vh, $left: 40vw, $size: 40rem);
+  }
+
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 10vh;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    justify-content: space-between;
+
+    &__item {
+      border-top: 1px solid $white;
+
+      &--heading {
+        font-size: 2.2rem;
+        margin: 1rem 0 3rem 0;
+      }
+
+      &--para {
+        font-size: 1.9rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
