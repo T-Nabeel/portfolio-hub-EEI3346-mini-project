@@ -32,13 +32,18 @@ import Footer from '../components/Footer.vue'
 
     <section class="recent-work">
       <h1 class="recent-work__heading">Recent Work</h1>
+
       <div class="recent-work__items">
-        <div class="recent-work__items--item-one">
-          <img src="../assets/images/recent-work-img-one.jpg" alt="recent-work-img" />
-        </div>
-        <div class="recent-work__items--item-two">
-          <img src="../assets/images/recent-work-img-two.jpg" alt="recent-work-img" />
-        </div>
+        <RouterLink to="/work">
+          <div class="recent-work__items--item-one">
+            <img src="../assets/images/recent-work-img-one.jpg" alt="recent-work-img" />
+          </div>
+        </RouterLink>
+        <RouterLink to="/gallery">
+          <div class="recent-work__items--item-two">
+            <img src="../assets/images/recent-work-img-two.jpg" alt="recent-work-img" />
+          </div>
+        </RouterLink>
       </div>
     </section>
   </main>
