@@ -1,3 +1,7 @@
+<script setup>
+import Footer from '../components/Footer.vue'
+</script>
+
 <template>
   <main class="container">
     <section class="hero">
@@ -30,13 +34,13 @@
       <h1 class="recent-work__heading">Recent Work</h1>
       <div class="recent-work__items">
         <div class="recent-work__items--item-one">
-          <img src="../assets/images/recent-work-img-one.jpg" alt="recent-work-img">
+          <img src="../assets/images/recent-work-img-one.jpg" alt="recent-work-img" />
         </div>
         <div class="recent-work__items--item-two">
-          <img src="../assets/images/recent-work-img-two.jpg" alt="recent-work-img">
+          <img src="../assets/images/recent-work-img-two.jpg" alt="recent-work-img" />
         </div>
       </div>
     </section>
-
   </main>
+  <Footer></Footer>
 </template>

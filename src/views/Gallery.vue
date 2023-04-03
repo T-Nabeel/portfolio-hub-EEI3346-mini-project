@@ -1,3 +1,7 @@
+<script setup>
+import Footer from '../components/Footer.vue'
+</script>
+
 <template>
   <main class="container">
     <section class="gallery">
@@ -39,7 +43,5 @@
       </div>
     </section>
   </main>
+  <Footer></Footer>
 </template>
-
-<style>
-</style>
