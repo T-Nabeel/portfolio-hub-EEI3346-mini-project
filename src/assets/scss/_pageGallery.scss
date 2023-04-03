@@ -1,0 +1,28 @@
+.gallery {
+  &__heading {
+    margin-top: 20vh;
+    font-size: 2rem;
+    text-align: center;
+
+    &__bg-gradient {
+      @include backgroundAnimation($top: -10vh, $left: 40vw, $size: 40rem);
+    }
+  }
+
+  &__images {
+    margin-top: 20vh;
+    columns: 3;
+    gap: 2rem;
+
+    &__image {
+      height: auto;
+      width: auto;
+      
+      img {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
